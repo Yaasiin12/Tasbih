@@ -1,21 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import "./style.css"
-import Tasbih from './components/Tasbih'
-
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-<div className='min-h-[100vh'>
-    <Footer/ >
-<Header  />
-<div>
-    <Tasbih/>
-</div>
-
-</div>
-) 
+import React from "react";
+import { ReactDOM } from "react";
+import {createRoot} from 'react-dom/client';
+import './style.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import ImageSlider from "./components/ImageSlider"
 
 
+const root = document.getElementById("root");
+createRoot(root).render(
+
+ 
+    <div>
+       
+        <Header/>
+        <ImageSlider/>
+        <Footer/>
+    </div>
+ 
+);
